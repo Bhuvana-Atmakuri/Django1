@@ -2,9 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Eat Street Restraunt</title>
+         {% load static %}
+
+    <link rel='stylesheet' href="{% static 'order6.css' %}">
+    <!---font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--aos library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--custom css link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+ <header>
+<div class="container">
+    <b> <a href="#" class="h1">Aaharam   &#127835</a></b>
+    <nav class="navigation bar">
+    <ul class="unordered">
+        <li><a href="home">Home</a></li>
+        <li><a href="About">Recipies</a></li>
+        <li><a href="con">Cart</a></li>
+        <li><a href="lo2">Help</a></li>
+        <li><a href="lo1">Account</a></li>
+    </ul>
+    </nav>
+</div>
+</header>
+ <div class="f1">
+     <div class="f2">
+         <div class="fi1">
+             <img src="{%static 'ES_Cover.jpg'%}" style="height:150px;width:220px" class="i2">
+         </div>
+         <div class="images">
+             <h2 class="hea">Eat Street&nbsp&nbsp Restaurant</h2>
+             <br>
+             <h1 class="hea1">North Indian,South Indian,Chinese</h1>
+             <br>
+             <h1 class="hea1"> Labbipet, Vijayawada</h1>
+             <br>
+              <h1 class="hea1">Opens from 10.00am to 12.00 am</h1>
+         </div>
+     </div>
+ </div>
+ <b> <h2 class="head">Menu</h2></b>
+ <br>
+ <br>
+ 	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search foods..">
+ <br>
+ <br>
+ <br>
+<h2 class="ho1">Veg Starters</h2>
+ <div class="in1">
+   <ol id='list1' style="display: contents;">
+        <li class="animals">
+     <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'ES_Vegmanhcurian.jpg'%}" style="border-radius:30px;width:400px;height:267px;" class="i1">
+         <h2>Veg Manchuria</h2>
+     </div>
+     </a>
+       </li>
+        <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'ES_Vegkebab.jpg'%}" style="border-radius:30px;width:400px;height:267px;" class="i1">
+         <h2>Veg Kebab</h2>
+     </div>
+     </a>
+       </li>
+         <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'ES_Mushroom 65.jpg'%}" style="border-radius:30px;width:400px;height:267px;" class="i1">
+         <h2>Mushroom 65</h2>
+     </div>
+     </a>
+       </li>
+              <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'ES_Panner 65.jpg'%}" style="border-radius:30px;width:400px;height:267px;" class="i1">
+         <h2>Paneer 65</h2>
+     </div>
+     </a>
+       </li>
+
+
+
 
 </body>
 </html>
