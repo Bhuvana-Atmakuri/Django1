@@ -27,7 +27,7 @@ document.getElementsByClassName('btn-purchase')[0].addEventListener('click', pur
 }
 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+    alert('You will be proceeded to payment page to complete payment process')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -74,7 +74,13 @@ document.querySelector('.cart span').textContent=1;
 }
 
 function addItemToCart(title, price, imageSrc) {
+
+
     var cartRow = document.createElement('div')
+    cartItems1 ={
+     [cartItemNames]:cartItems
+    }
+    localStorage.setItem("productsincart",JSON.stringify(cartItems));
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')

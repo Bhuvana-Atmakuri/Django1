@@ -128,3 +128,6 @@ def orderin6(request):
 
 def cart(request):
     return render(request, 'cart.html')
+
+def payment(request):
+    return render(request, 'payment.html')

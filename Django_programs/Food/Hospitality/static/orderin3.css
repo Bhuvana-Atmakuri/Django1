@@ -32,6 +32,11 @@
          font-family:Copperplate, Papyrus, fantasy;
          animation:shadow 3s linear infinite;
          }
+         h4{
+         font-size:30px;
+         font-family:Copperplate, Papyrus, fantasy;
+         animation:shadow 3s linear infinite;
+         }
 
 
          .b1{
@@ -155,10 +160,10 @@ margin-top:130px;
 background-color:black;
 color:white;
 position: sticky;
-
+top:0;
 z-index: 2;
 pointer-events: none;
-height:220px;
+height:180px;
 margin-bottom:40px;
 }
 .f2{
@@ -227,3 +232,140 @@ font-family:Cooper;
       width: 70%;
       }
 
+.cart-row{
+display:flex;
+font-size:15px;
+}
+.content-section {
+    margin: 1em;
+}
+
+.container1 {
+    max-width: 900px;
+    margin: 101px;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-item {
+    width: 45%;
+}
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-quantity {
+    width: 35%;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btn-danger {
+     color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    height:30px;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+.shop-item-price {
+
+    color: black;
+    margin-bottom:15px;
+
+}
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.shop-item-title {
+
+    text-align: center;
+    font-weight: bold;
+    margin-left:70px;
+}
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+.shop-item-image {
+    border-radius:30px;
+}
+.navbar-toggler {
+  outline: none !important;
+
+}
+.toggler-icon {
+  font-size: 30px;
+
+
+}

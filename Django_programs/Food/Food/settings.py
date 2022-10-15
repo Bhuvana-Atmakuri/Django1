@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 from . Info import *
-
+EMAIL_BACKEND = django.core.mail.backends.smtp.EmailBackend
 EMAIL_USE_TLS=EMAIL_USE_TLS
 EMAIL_HOST=EMAIL_HOST
 EMAIL_HOST_USER=EMAIL_HOST_USER
@@ -85,8 +85,10 @@ WSGI_APPLICATION = 'Food.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Django',
+        'USER': 'django',
+        'PASSWORD':'1234',
     }
 }
 

@@ -22,8 +22,6 @@
     <nav class="navigation bar">
     <ul class="unordered">
         <li><a href="home">Home</a></li>
-        <li><a href="About">Recipies</a></li>
-        <li><a href="con">Cart</a></li>
         <li><a href="lo2">Help</a></li>
         <li><a href="lo1">Account</a></li>
     </ul>
@@ -59,14 +57,22 @@
   <div class="in1">
    <ol id='list1' style="display: contents;">
  <li class="animals">
-     <a href="#">
+
      <div class="grid-item">
-          <img src="{%static 'veg.jpg'%}" style="border-radius:30px;width:400px;height:267px;" class="i1">
-         <h2>Veg Manchuria &nbsp - &nbsp &#8377;20</h2>
-         <br>
-         <a href="#"><button style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button></a>
+   <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'veg.jpg'%}"style="height:267px;width:400px;">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Veg Manchuria &nbsp-</h2>
+                        <h2 class="shop-item-price"> $30</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
      </div>
-     </a>
+     </div>
        </li>
       <li class="animals">
      <a href="#">
@@ -267,7 +273,25 @@
  </div>
 <br>
  <br>
-
+<br>
+ <br>
+<br>
+ <br>
+    <section class="container1 content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+        <a href="payment" ><button class="btn btn-primary btn-purchase" type="button">PURCHASE</button></a>
+        </section>
 
 <br>
  <br>
