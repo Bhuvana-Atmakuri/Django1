@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'sign.css' %}">
+        <!---font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--aos library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body  style="background-image:url({%static 'loback.jpg' %})">
+<div class="center">
+    <div class="container">
+        <div class="text"><h1>Sign Up</h1></div>
+        <form action=' ' method="POST">
+            {% csrf_token %}
+            <div class="data">
+            <label>UserName</label>
+            <input type="text" placeholder="Enter your Username" class="i1" required name="username">
+             </div>
+            <div class="data1">
+             <label>Password</label>
+             <input type="password" placeholder="Enter your password" class="i1" name="password" required>
+              </div>
+            <div class="data1">
+             <label>Email</label>
+             <input type="email" placeholder="Enter your email" class="i1" name="email" required>
+              </div>
+            <div class="data1">
+             <label>Phone no</label>
+             <input type="text" placeholder="Enter your Phone no" class="i1"  name="mobileno" pattern="[0-9]*"required>
+              </div>
+            <div class="data2">
+            <input type="submit" Value="Sign Up" class="i3">
+            </div>
+               <div class="not">Already have an account?<a href="lo" class="a">Login here</a></div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

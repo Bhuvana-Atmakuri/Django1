@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Morning</title>
+     {% load static %}
+    <script src="{% static 'cart.js' async%}" async></script>
+    <link rel='stylesheet' href="{% static 'orderin2.css' %}">
+    <!---font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!--aos library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--custom css link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:#FFFDD0;">
+ <header>
+
+<div class="container">
+    <b> <a href="#" class="h1">Aaharam   &#127835</a></b>
+    <nav class="navigation bar">
+    <ul class="unordered">
+        <li><a href="home">Home</a></li>
+        <li><a href="About">Recipies</a></li>
+
+        <li><a href="lo2">Help</a></li>
+        <li><a href="lo1">Account</a></li>
+        <li class="cart"><a href="cart"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav"  style="background-color:#89CFF0;height:50px;width:100px;">
+        <i class="fa fa-shopping-cart">&nbspCart <span style="font-size:20px;">&nbsp  0</span></i>
+      </button></a></li>
+    </ul>
+    </nav>
+</div>
+</header>
+
+ <div class="f1">
+     <div class="f2">
+         <div class="fi1">
+             <img src="{%static 'bh2.jpg'%}" class="i2">
+         </div>
+         <div class="images">
+             <h2 class="hea">Good Morning Tea & BreakFast&#9749;</h2>
+             <br>
+             <h1 class="hea1">South Indian, Snacks</h1>
+             <br>
+              <h1 class="hea1">Opens from 9.00 am to 12.00 pm</h1>
+         </div>
+     </div>
+ </div>
+ <b> <h2 class="head">Menu</h2></b>
+ <br>
+ <br>
+ 	<input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search foods..">
+ <br>
+ <br>
+ <br>
+ <h2 class="ho1">Beverages</h2>
+  <div class="in1">
+   <ol id='list1' style="display: contents;">
+ <li class="animals">
+
+     <div class="grid-item">
+   <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'tea.jpg'%}">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Tea &nbsp-</h2>
+                        <h2 class="shop-item-price"> &nbsp $12.99</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
+     </div>
+     </div>
+       </li>
+      <li class="animals">
+
+     <div class="grid-item">
+         <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'coffee.jpg'%}">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Coffee &nbsp-</h2>
+                        <h2 class="shop-item-price"> $12.99</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
+     </div>
+     </div>
+
+       </li>
+   </ol>
+ </div>
+ <br>
+ <br>
+ <h2 class="ho1">Tiffins</h2>
+ <br>
+ <div class="in1">
+   <ol id='list' style="display: contents;">
+ <li class="animals">
+
+     <div class="grid-item">
+         <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'idly2.jpeg'%}">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Idly &nbsp-</h2>
+                        <h2 class="shop-item-price">$12.99</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
+     </div>
+     </div>
+
+       </li>
+
+      <li class="animals">
+
+     <div class="grid-item">
+
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'dosa1.jpg'%}">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Dosa &nbsp-</h2>
+                        <h2 class="shop-item-price"> $12.99</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
+     </div>
+
+
+
+       </li>
+        <li class="animals">
+
+     <div class="grid-item">
+        <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'puri1.jpeg'%}">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Puri &nbsp-</h2>
+                        <h2 class="shop-item-price"> $12.99</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
+     </div>
+     </div>
+
+       </li>
+        <li class="animals">
+
+     <div class="grid-item">
+
+                <div class="shop-item">
+                    <img class="shop-item-image i1" src="{%static 'vada1.jpeg'%}">
+
+                    <div class="shop-item-details">
+                        <h2 class="shop-item-title">Vada1 &nbsp-</h2>
+                        <h2 class="shop-item-price"> $12.99</h2>
+
+                    </div>
+                    <button class="btn btn-primary shop-item-button" type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+                </div>
+
+     </div>
+
+
+       </li>
+        <li class="animals">
+     <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'chapathi1.jpg'%}" style="border-radius:30px;"  class="i1">
+         <h2>Chapathi &nbsp - &nbsp $20</h2>
+         <br><br>
+        <button class="shop-item-button"type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+     </div>
+     </a>
+       </li>
+        <li class="animals">
+      <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'upma1.jpeg'%}" style="border-radius:30px;" class="i1">
+         <h2>Upma &nbsp - $20</h2>
+         <br><br>
+         <button class=" shop-item-button"type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+     </div>
+     </a>
+   </li>
+        <li class="animals">
+      <a href="#">
+     <div class="grid-item">
+          <img src="{%static 'Bonda1.jpeg'%}" style="border-radius:30px;" class="i1">
+         <h2>Bonda &nbsp - $20</h2>
+         <br><br>
+         <button class="shop-item-button"type="button" style="height:40px;width:200px;border-radius:10px;color:black;font-size:25px;background-color:orange;">Add To Cart</button>
+     </div>
+     </a>
+   </li>
+   </ol>
+ </div>
+<br>
+ <br>
+<br>
+ <br>
+    <section class="container1 content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+<footer style="background-color:#000033;" class="footer">
+<h3>Quick Links</h3>
+    <br>
+<br>
+ <div class="column">
+
+
+<p>Company</p>
+     <br>
+     <br>
+
+                <ul style="list-style-type:disc">
+                    <li><a href="#" style="color:white;">About Us</a></li>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="#" style="color:white;">Privacy Policy</a></li>
+                    <br>
+                    <br>
+                    <br>
+                    <li><a href="#" style="color:white;">Contact Us</a></li>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+
+            <div class="column">
+
+
+<p>For Restaurants</p>
+<br><br>
+
+                <ul>
+                    <li><a href="#" style="color:white;">Partner With Us</a></li><br><br>
+                    <li><a href="#" style="color:white;">Apps For You</a></li><br><br>
+                    <li><a href="#" style="color:white;">Languages</a></li><br><br>
+
+                </ul>
+            </div>
+
+            <div class="column">
+
+
+<p>Social Links</p>
+<br><br>
+
+                <ul>
+
+                    <li><a href="#" class="fa fa-facebook" style="font-size:30px;"></a>
+                          <a href="#" class="fa fa-twitter" style="font-size:30px;"></a>
+                          <a href="#" class="fa fa-linkedin" style="font-size:30px;"></a>
+                          <a href="#" class="fa fa-youtube" style="font-size:30px;"></a>
+                          <a href="#" class="fa fa-instagram" style="font-size:30px;"></a></li>
+                </ul>
+            </div>
+
+</footer>
+<script src="{% static 'animals.js' %}"></script>
+</body>
+</html>
